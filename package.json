@@ -1,0 +1,44 @@
+{
+  "name": "frontend-auditor-agent",
+  "version": "1.0.0",
+  "description": "AI-powered frontend auditor agent for DTSL monorepo standards compliance",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "jest",
+    "audit": "node src/cli.js",
+    "install-mcp": "npm install @modelcontextprotocol/sdk @modelcontextprotocol/server-github"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@modelcontextprotocol/server-github": "^1.0.0",
+    "@octokit/rest": "^20.0.2",
+    "commander": "^11.1.0",
+    "yaml": "^2.3.4",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "table": "^6.8.1",
+    "diff": "^5.1.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "audit",
+    "frontend",
+    "monorepo",
+    "compliance",
+    "dtsl",
+    "mcp",
+    "github"
+  ],
+  "author": "Sahil Sharma",
+  "license": "MIT"
+}
